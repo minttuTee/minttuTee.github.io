@@ -1,0 +1,49 @@
+/* * {border: 2px lime solid;
+padding: 10px;} /* jos näin alussa kaikki elementit tulee samanlaiseen latikkoon, * tarkoittaa kaikkea*/
+
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&display=swap');
+
+body {color:aqua; /* tekstin väri */
+background:#bcbcbd;
+font-family: verdana, Geneva, Tahoma, sans-serif;
+} 
+
+h1 {margin-left: 100px;
+    font-family: "Permanent Marker", cursive;
+color:chartreuse !important; /* tällä saa overridattua kaikki muut määrittely ja tämä jää voimaan */ 
+color:deeppink;}
+
+h2 {font-family: "Clicker Script", cursive;
+color:crimson !important;}
+
+p {font-family: "Bitter", serif;}
+
+
+#pupu {width: 100%;
+        max-width: 500px ;
+        border: solid 5px white; /* kehyksen muoto, leveys, väri*/
+        border-radius: 50px;} /* pyöristys*/
+        
+/* aina ei ole selkeää mikä overraidaa minkä, eli pitää kokeilla. YLeissääntö: koodia luetaan ylhäältä alas, viimeisin määrittely jää voimaan*/
+
+/* class-luokan määritys voi laitaaa sivulle niin monta kertaa kuin haluaa ja antaa mille tahansa elementille käytä class= */
+.keskitys {margin:auto; /*lohkon keskitys, elementillä täytyy olla leveys että senpystyy keskittämään*/
+text-align: center;}
+.vasen {margin:auto;
+        text-align:left;}
+
+/* ID voi olla vain yhdessä paikassa per sivu, on yksilöivä, käytetään esim. lomakkeissa */
+#kolmas {color:blue;
+color:yellow;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;} 
+/* laita tyylitiedostoon kaikki mikä toistuu samanlaisena kaikilla sivuilla, tee html:ään yksittäisten sivujen muutokset*/
+
+main {width:100%; /*suhteellinen leveys*/
+      max-width: 1000px; /* maksimileveys */
+      margin: auto; /* lohkon keskitys*/
+      background-color: rgba(188, 188, 189, 0.404); /* laita läpinäkyvyyttä*/
+      padding: 50px;
+    }
+
+
+
