@@ -3,23 +3,37 @@ padding: 10px;} /* jos näin alussa kaikki elementit tulee samanlaiseen latikkoo
 
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&display=swap');
 
-body {color:aqua; /* tekstin väri */
-background:#bcbcbd;
-font-family: verdana, Geneva, Tahoma, sans-serif;
+body {
+        background:#c0c0c0;
 } 
 
-h1 {    font-family: "Permanent Marker", cursive;
-color:chartreuse !important; /* tällä saa overridattua kaikki muut määrittely ja tämä jää voimaan */ 
-color:deeppink;}
+h1 {    
+        font-family: "Permanent Marker", cursive;
+        color: chartreuse;
+        font-size: 500%;
+}
 
-h2 {font-family: 'Courier New', Courier, monospace, "Clicker Script", cursive;
-color:crimson !important;}
+h2 {
+        font-family: 'Courier New', Courier, monospace, "Clicker Script", cursive;
+        color:crimson;
+}
+
+h3 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 50px;
+        color: #ffaa00;
+}
+
+h4 {
+        font-size: larger;
+}
 
 p {font-family: 'Times New Roman', Times, serif, "Bitter", serif;}
 
 
 #pupu {width: 100%;
         max-width: 500px ;
+
         border: solid 5px white; /* kehyksen muoto, leveys, väri*/
         border-radius: 50px;} /* pyöristys*/
         
@@ -32,9 +46,10 @@ text-align: center;}
         text-align:left;}
 
 /* ID voi olla vain yhdessä paikassa per sivu, on yksilöivä, käytetään esim. lomakkeissa */
-#kolmas {color:blue;
-color:yellow;
-font-family: 'Times New Roman', Times, serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;} 
+
+        color: #fbfc0b;
+        font-family: 'Times New Roman', Times, serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:larger;} 
 /* laita tyylitiedostoon kaikki mikä toistuu samanlaisena kaikilla sivuilla, tee html:ään yksittäisten sivujen muutokset*/
 
 main {width:100%; /*suhteellinen leveys*/
